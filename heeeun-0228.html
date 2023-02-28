@@ -30,11 +30,11 @@
     root.appendChild(makeDiv);
    //root의 자식인 div 4구역을 만들자 
    if(i===0) {  // 1  div 
-    makeDiv.style.cssText="width=147px; height:29px; font-size: 24px; position:absolute; left:141px; top:301px "
+    makeDiv.style.cssText="width:147px; height:29px; font-size: 24px; position:absolute; left:141px; top:301px "
     makeDiv.textContent="Lorem Ipsum"
    } 
    else if(i === 1){ // bar 큰제목밑에 흰바가 색깔이 왜 안나올까? 
-    makeDiv.style.cssText="color:tomato; width=199px; height:2px;  position:absolute; left: 115px; top:340px; " 
+    makeDiv.style.cssText="z-index:1; color:white; width=199px; height:2px;  position:absolute; left: 115px; top:340px; " 
    }
    else if (i=== 2){   // 본문부분 
     makeDiv.style.cssText="width=295px; height:186px; position:absolute; left:67px; top:364px; right:68px; font-size:12px; text-align:justify"
@@ -42,9 +42,9 @@
    }
    else{  // 동그라미 4번째 div 
     makeDiv.style.cssText="width:82px; height:82px; background-color:white; border-radius: 41px; margin-top:673px;margin-left:174px "
-  }
+   }
   
-    }
+  }
   </script>
   <script src="./light-mode.js"></script>
   <script>
