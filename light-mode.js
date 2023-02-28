@@ -82,28 +82,46 @@ function titleFunc(titleTextContent, titleTextAlign, titleFontWeight, titleFontS
 titleFunc(traningData.title, "center", "400", "24px", "2px solid black", "200px", "301px", "10px");
 
 // div style
-title.textContent = traningData.title;
-title.style.textAlign = "center";
-title.style.fontWeight = "400";
-title.style.fontSize = "24px";
-title.style.borderBottom = "2px solid black";
-title.style.width = "200px";
-title.style.paddingTop = "301px";
-title.style.paddingBottom = "10px";
+// title.textContent = traningData.title;
+// title.style.textAlign = "center";
+// title.style.fontWeight = "400";
+// title.style.fontSize = "24px";
+// title.style.borderBottom = "2px solid black";
+// title.style.width = "200px";
+// title.style.paddingTop = "301px";
+// title.style.paddingBottom = "10px";
 
+
+function paragraphFunc(paraTextContent, paraWidth, paraPaddingTop, paraFontSize, paraFontWeight, paraTextAlign) {
+  paragraph.textContent = paraTextContent;
+  paragraph.style.width = paraWidth;
+  paragraph.style.paddingTop = paraPaddingTop;
+  paragraph.style.fontSize = paraFontSize;
+  paragraph.style.fontWeight = paraFontWeight;
+  paragraph.style.textAlign = paraTextAlign;
+}
+paragraphFunc(traningData.paragraph, "295px", "22px", "12px", "400", "Justify");
 // p style
-paragraph.textContent = traningData.paragraph;
-paragraph.style.width = "295px";
-paragraph.style.paddingTop = "22px";
-paragraph.style.fontSize = "12px";
-paragraph.style.fontWeight = "400";
-paragraph.style.textAlign = "Justify"
+// paragraph.textContent = traningData.paragraph;
+// paragraph.style.width = "295px";
+// paragraph.style.paddingTop = "22px";
+// paragraph.style.fontSize = "12px";
+// paragraph.style.fontWeight = "400";
+// paragraph.style.textAlign = "Justify"
 
+function circleFunc(circleBackgroundColor, circleWidth, circleHeight, circleBorderRadius, circleMarginTop, circleCursor) {
+  circle.style.backgroundColor = circleBackgroundColor;
+  circle.style.width = circleWidth;
+  circle.style.height = circleHeight;
+  circle.style.borderRadius = circleBorderRadius;
+  circle.style.marginTop = circleMarginTop;
+  circle.style.cursor = circleCursor;
+}
+circleFunc(traningData.color[0], "82px", "82px", "82px", "123px", "pointer");
 // circle style
-circle.style.backgroundColor = traningData.color[0];
-circle.style.width = "82px";
-circle.style.height = "82px";
-circle.style.borderRadius = "82px";
-circle.style.marginTop = "123px";
-circle.style.cursor = "pointer"
-
+// circle.style.backgroundColor = traningData.color[0];
+// circle.style.width = "82px";
+// circle.style.height = "82px";
+// circle.style.borderRadius = "82px";
+// circle.style.marginTop = "123px";
+// circle.style.cursor = "pointer"
