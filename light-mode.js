@@ -134,4 +134,9 @@ function operate(){
   circleFunc(traningData.color[0], "82px", "82px", "82px", "123px", "pointer");
 }
 
+// 웹페이지 열람 시 함수 실행해서 구조 만들기
 operate();
+
+// 동그라미 클릭하면 다크모드로 전환 되도록 이벤트 걸 예정
+root.children[2].addEventListener("click", function(){});
+// console.dir(circle);

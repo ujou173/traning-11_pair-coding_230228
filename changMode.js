@@ -1,0 +1,1 @@
+root.children[3].addEventListener("click", operate());
