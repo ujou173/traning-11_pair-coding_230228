@@ -69,6 +69,18 @@ rootFunc("430px", "932px", "1px solid black", "flex", "column", "center");
 // root.style.flexDirection = "column";
 // root.style.alignItems = "center";
 
+function titleFunc(titleTextContent, titleTextAlign, titleFontWeight, titleFontSize, titleBorderBottom, titleWidth, titlePaddingTop, titlePaddingBottom) {
+  title.textContent = titleTextContent;
+  title.style.textAlign = titleTextAlign;
+  title.style.fontWeight = titleFontWeight;
+  title.style.fontSize = titleFontSize;
+  title.style.borderBottom = titleBorderBottom;
+  title.style.width = titleWidth;
+  title.style.paddingTop = titlePaddingTop;
+  title.style.paddingBottom = titlePaddingBottom;
+}
+titleFunc(traningData.title, "center", "400", "24px", "2px solid black", "200px", "301px", "10px");
+
 // div style
 title.textContent = traningData.title;
 title.style.textAlign = "center";
