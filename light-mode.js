@@ -51,15 +51,15 @@ makeElement.loopFunc();
 //     root.style.alignItems = this.alignItems;
 //   },
 // }
-function rootFunc() {
-  root.style.width = "430px";
-  root.style.height = "932px";
-  root.style.border = "1px solid black";
-  root.style.display = "flex";
-  root.style.flexDirection = "column";
-  root.style.alignItems = "center";
+function rootFunc(rootWidth, rootHeight, rootBorder, rootDisplay, rootFlexDirection, rootAlignItems) {
+  root.style.width = rootWidth;
+  root.style.height = rootHeight;
+  root.style.border = rootBorder;
+  root.style.display = rootDisplay;
+  root.style.flexDirection = rootFlexDirection;
+  root.style.alignItems = rootAlignItems;
 }
-rootFunc();
+rootFunc("430px", "932px", "1px solid black", "flex", "column", "center");
 
 // root style
 // root.style.width = "430px";
