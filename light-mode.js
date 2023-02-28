@@ -20,7 +20,7 @@ const makeElement = {
   },
 }
 
-makeElement.loopFunc();
+// makeElement.loopFunc();
 
 // makeElement.maker(0);
 // makeElement.maker(1);
@@ -59,7 +59,7 @@ function rootFunc(rootWidth, rootHeight, rootBorder, rootDisplay, rootFlexDirect
   root.style.flexDirection = rootFlexDirection;
   root.style.alignItems = rootAlignItems;
 }
-rootFunc("430px", "932px", "1px solid black", "flex", "column", "center");
+// rootFunc("430px", "932px", "1px solid black", "flex", "column", "center");
 
 // root style
 // root.style.width = "430px";
@@ -79,7 +79,7 @@ function titleFunc(titleTextContent, titleTextAlign, titleFontWeight, titleFontS
   title.style.paddingTop = titlePaddingTop;
   title.style.paddingBottom = titlePaddingBottom;
 }
-titleFunc(traningData.title, "center", "400", "24px", "2px solid black", "200px", "301px", "10px");
+// titleFunc(traningData.title, "center", "400", "24px", "2px solid black", "200px", "301px", "10px");
 
 // div style
 // title.textContent = traningData.title;
@@ -100,7 +100,7 @@ function paragraphFunc(paraTextContent, paraWidth, paraPaddingTop, paraFontSize,
   paragraph.style.fontWeight = paraFontWeight;
   paragraph.style.textAlign = paraTextAlign;
 }
-paragraphFunc(traningData.paragraph, "295px", "22px", "12px", "400", "Justify");
+// paragraphFunc(traningData.paragraph, "295px", "22px", "12px", "400", "Justify");
 // p style
 // paragraph.textContent = traningData.paragraph;
 // paragraph.style.width = "295px";
@@ -117,7 +117,7 @@ function circleFunc(circleBackgroundColor, circleWidth, circleHeight, circleBord
   circle.style.marginTop = circleMarginTop;
   circle.style.cursor = circleCursor;
 }
-circleFunc(traningData.color[0], "82px", "82px", "82px", "123px", "pointer");
+// circleFunc(traningData.color[0], "82px", "82px", "82px", "123px", "pointer");
 // circle style
 // circle.style.backgroundColor = traningData.color[0];
 // circle.style.width = "82px";
@@ -125,3 +125,13 @@ circleFunc(traningData.color[0], "82px", "82px", "82px", "123px", "pointer");
 // circle.style.borderRadius = "82px";
 // circle.style.marginTop = "123px";
 // circle.style.cursor = "pointer"
+
+function operate(){
+  makeElement.loopFunc();
+  rootFunc("430px", "932px", "1px solid black", "flex", "column", "center");
+  titleFunc(traningData.title, "center", "400", "24px", "2px solid black", "200px", "301px", "10px");
+  paragraphFunc(traningData.paragraph, "295px", "22px", "12px", "400", "Justify");
+  circleFunc(traningData.color[0], "82px", "82px", "82px", "123px", "pointer");
+}
+
+operate();

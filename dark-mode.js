@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body{
-      margin: 0 
-    }
-  </style>
-</head>
-<body>
-  <div id="root"></div>
-  <script>
-    // let StyleList ={ 
-    //   width : ["147px", "199px", "295px","82px"],
-    //   height : ["29px", "2px","186px","82px"],
-    //   color : ["1E1E1E","#FFFFFF"],
-    //   BackgroungColor:["1E1E1E"]
-    // }  <- 변수 만들고 싶어서 도전하다가 ... 실패함 연습이 더 필요할것같아요 
-    
-    let root = document.getElementById('root');
+// let root = document.getElementById('root');
     root.style.cssText="width:430px; height:932px; position:absolute; background-color:darkgray;" //색표시 숫자로 적용하는 법을 잘모르겠습니다. 
     
     for(let i = 0; i<4; i++) {
@@ -45,10 +22,3 @@
   }
   
     }
-  </script>
-  <script src="./light-mode.js"></script>
-  <script>
-    root.children[3].addEventListener("click", operate());
-  </script>
-</body>
-</html>
