@@ -18,23 +18,9 @@ const makeElement = {
       console.log(i);
     }
   },
-
-  rootStyle : {
-    width : "430px",
-    height : "932px",
-    border : "1px solid black",
-    display : "flex",
-    flexDirection : "column",
-    alignItems : "center",
-
-    rootFunc : function() {
-      console.log(this.width);
-    },
-  },
 }
 
 makeElement.loopFunc();
-makeElement.rootStyle.rootFunc();
 
 // makeElement.maker(0);
 // makeElement.maker(1);
@@ -48,17 +34,40 @@ makeElement.rootStyle.rootFunc();
 // root.appendChild(p);
 // root.appendChild(circle);
 
-// root style
-root.style.width = "430px";
-root.style.height = "932px";
-root.style.border = "1px solid black";
-root.style.display = "flex";
-root.style.flexDirection = "column";
-root.style.alignItems = "center";
+// const rootStyle = {
+//   width : "430px",
+//   height : "932px",
+//   border : "1px solid black",
+//   display : "flex",
+//   flexDirection : "column",
+//   alignItems : "center",
 
-function elementStyle(element, widthValue,) {
-  element.style.width = widthValue;
+//   rootFunc : function() {
+//     root.style.width = this.width;
+//     root.style.height = this.height;
+//     root.style.border = this.border;
+//     root.style.display = this.display;
+//     root.style.flexDirection = this.flexDirection;
+//     root.style.alignItems = this.alignItems;
+//   },
+// }
+function rootFunc() {
+  root.style.width = "430px";
+  root.style.height = "932px";
+  root.style.border = "1px solid black";
+  root.style.display = "flex";
+  root.style.flexDirection = "column";
+  root.style.alignItems = "center";
 }
+rootFunc();
+
+// root style
+// root.style.width = "430px";
+// root.style.height = "932px";
+// root.style.border = "1px solid black";
+// root.style.display = "flex";
+// root.style.flexDirection = "column";
+// root.style.alignItems = "center";
 
 // div style
 title.textContent = traningData.title;
