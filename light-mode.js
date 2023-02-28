@@ -98,7 +98,7 @@ function paragraphFunc(paraTextContent, paraWidth, paraPaddingTop, paraFontSize,
   paragraph.style.paddingTop = paraPaddingTop;
   paragraph.style.fontSize = paraFontSize;
   paragraph.style.fontWeight = paraFontWeight;
-  paragraph.style.textAlign = paraTextAlign;
+  // paragraph.style.textAlign = paraTextAlign;
 }
 // paragraphFunc(traningData.paragraph, "295px", "22px", "12px", "400", "Justify");
 // p style
@@ -126,7 +126,7 @@ function circleFunc(circleBackgroundColor, circleWidth, circleHeight, circleBord
 // circle.style.marginTop = "123px";
 // circle.style.cursor = "pointer"
 
-function operate(){
+function operateLight(){
   makeElement.loopFunc();
   rootFunc("430px", "932px", "1px solid black", "flex", "column", "center");
   titleFunc(traningData.title, "center", "400", "24px", "2px solid black", "200px", "301px", "10px");
@@ -135,8 +135,8 @@ function operate(){
 }
 
 // 웹페이지 열람 시 함수 실행해서 구조 만들기
-operate();
+// operateLight();
 
 // 동그라미 클릭하면 다크모드로 전환 되도록 이벤트 걸 예정
-root.children[2].addEventListener("click", function(){});
+// root.children[2].addEventListener("click", function(){});
 // console.dir(circle);
